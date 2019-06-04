@@ -1,0 +1,55 @@
+{
+  "name": "sms_platform_schedule_task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG=*:error node ./build/index.js",
+    "dev": "NODE_ENV=dev DEBUG=* node ./build/index.js",
+    "production": "NODE_ENV=production DEBUG=* node ./build/index.js",
+    "notice_dev": "NODE_ENV=dev DEBUG=* node ./build/NoticeService.js",
+    "notice_production": "NODE_ENV=production DEBUG=* node ./build/NoticeService.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "joew",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "assert": "^1.4.1",
+    "axios": "^0.17.1",
+    "crypto": "^1.0.1",
+    "debug": "^2.6.8",
+    "log4js": "^2.4.1",
+    "mongodb": "^3.0.0-rc0",
+    "mssql": "^4.1.0",
+    "mysql": "^2.15.0",
+    "needle": "^2.0.1",
+    "net": "^1.0.2",
+    "node-schedule": "^1.2.4",
+    "nodemailer": "^4.4.0",
+    "nodemailer-smtp-pool": "^2.8.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.4",
+    "@types/axios": "^0.14.0",
+    "@types/debug": "0.0.30",
+    "@types/log4js": "^2.3.5",
+    "@types/mongodb": "^2.2.18",
+    "@types/mssql": "^4.0.6",
+    "@types/mysql": "^2.15.2",
+    "@types/needle": "^2.0.2",
+    "@types/node-schedule": "^1.2.1",
+    "@types/nodemailer": "^4.3.1",
+    "@types/nodemailer-smtp-pool": "^1.0.31",
+    "@types/request": "^2.0.8",
+    "@types/request-promise": "^4.1.39",
+    "telnet-client": "^0.15.5",
+    "tslint": "^5.8.0",
+    "typescript": "^2.6.2"
+  }
+}

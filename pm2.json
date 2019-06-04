@@ -1,0 +1,38 @@
+{
+    "apps": [{
+        "name": "task",
+        "script": "build/index.js",
+        "exec_mode": "fork",
+        "instances": "1",
+        "max_memory_restart": "2G",
+        "autorestart": true,
+        "node_args": [],
+        "args": [],
+        "env": {
+            "NODE_ENV": "production",
+            "DEBUG": "*:error"
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        }
+
+    },
+    {
+        "name": "notice",
+        "script": "build/NoticeService.js",
+        "exec_mode": "cluster",
+        "instances": "2",
+        "max_memory_restart": "2G",
+        "autorestart": true,
+        "node_args": [],
+        "args": [],
+        "env": {
+            "NODE_ENV": "production",
+            "DEBUG": "*:error"
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        }
+
+    }]
+}
